@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * isalpha - returns 1 if c is alphabet and 0 if otherwise
+ *_isalpha - returns 1 if c is alphabet and 0 if otherwise
  *@c: integer to be tested
  *Return: 1 or 0
  */
