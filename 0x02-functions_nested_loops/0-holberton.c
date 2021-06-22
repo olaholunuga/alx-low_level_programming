@@ -1,12 +1,17 @@
 #include "holberton.h"
 /**
- * main - functions prints string
- *
- * Return: 0
- */
+* main - functions prints string
+*
+* Return: 0
+*/
 int main(void)
 {
-_putchar("Holberton");
+char s[] = "Holberton";
+int i = 0;
+for (i = 0; i < 9; i++)
+{
+_putchar(s[i]);
+}
 _putchar('\n');
-return 0;
+return (0);
 }
