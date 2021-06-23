@@ -8,8 +8,10 @@
  */
 int print_last_digit(int r)
 {
+
 int lastDigit;
 lastDigit = r % 10;
+
 if (lastDigit < 0)
 {
 _putchar(-lastDigit + 48);
