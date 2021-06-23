@@ -2,10 +2,6 @@
 /**
  * jack_bauer - prints a 24 hour timer in military style
  *
- * @i: counter for the minutes
- *
- * @j: counter for the seconds
- *
  * Return: always 0
  */
 void jack_bauer(void)
