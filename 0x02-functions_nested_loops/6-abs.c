@@ -1,8 +1,10 @@
 #include "holberton.h"
 /**
- *_abs - prints the absolute value of an int
+ * _abs - prints the absolute value of an int
  *
- *return 0
+ * @r: the number to be computed
+ *
+ * Return: always 0
  */
 int _abs(int r)
 {
