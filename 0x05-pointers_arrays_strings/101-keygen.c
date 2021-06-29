@@ -1,32 +1,24 @@
-#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- * _strlen - returns the length of a string
- * @s: string
- * Return: llength of string
+ * main - generates keygen.
+ * Return: 0 Always.
  */
-int _strlen(char *s)
+int main(void)
 {
-int length = 0;
+	int r = 0, c = 0;
+	time_t t;
 
-while (*s)
-{
-s++;
-length++;
-}
-return (length);
-}
-/**
- * puts2 - prints one char out of 2 of a string followed by a new line
- * @str: string
- */
-void puts2(char *str)
-{
-int i;
-int length = _strlen(str);
-
-for (i = 0; i < length; i += 2)
-{
-_putchar(*(str + i));
-}
-_putchar('\n');
+	srand((unsigned int) time(&t));
+	while (c < 2772)
+	{
+		r = rand() % 128;
+		if ((c + r) > 2772)
+			break;
+		c = c + r;
+		printf("%c", r);
+	}
+	printf("%c\n", (2772 - c));
+	return (0);
 }
