@@ -1,27 +1,21 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
- * _strcat - check the code for ALX School students.
- *
- *@dest: passed parameter.
- *@src: passed parameter.
- *
- * Return:  dest.
+ * _strcat - function to concatenat4e two strings
+ * @dest: a string
+ * @src: a string
+ * Return: char dest[i]
  */
 char *_strcat(char *dest, char *src)
 {
-int i, j = 0;
-i = 0;
-while (dest[i] != '\0')
+int i, j;
+for (i = 0; dest[i] != '\0';i++){
+/**/
+}
+for (j = 0; src[j] != '\0';j++)
 {
+dest[i]=src[j];
 i++;
 }
-while (src[j] != '\0')
-{
-dest[i] = src[j];
-j++;
-i++;
-}
-dest[i] = '\0';
-return (dest);
+dest[i]='\0';
+return(dest);
 }
