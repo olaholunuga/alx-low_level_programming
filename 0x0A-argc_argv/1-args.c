@@ -7,19 +7,8 @@
  * @argv: unused variable
  * Return: 0
  */
-int main(int argc, char *argv[])
-{
-int i;
-if (agrc > 0)
-{
-for (i = 1; i = argc; i++)
+int main(int argc, char *argv[] __attribute__((unused)))
 {
 printf("%d\n", argc - 1);
-}
-}
-else
-{
-printf("%d\n", argc);
-}
 return 0;
 }
